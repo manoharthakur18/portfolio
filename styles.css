@@ -1187,6 +1187,11 @@ img {
   color: var(--color-primary);
 }
 
+.footer-copyright {
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
 /* 
    Responsive Design
     */

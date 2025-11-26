@@ -3,60 +3,62 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Manohar Kumar Thakur (Manohar Thakur) — Full‑stack Software Engineer</title>
   <meta name="description"
-    content="Manohar Kumar Thakur - Full-stack Software Engineer with 3 years of expertise in Next.js, React, Node.js, and PostgreSQL. Learn more about Manohar, Manohar Kumar, Manohar Kumar Thakur, and Manohar Thakur." />
-  <meta name="keywords"
-    content="Manohar, Manohar Kumar, Manohar Kumar Thakur, Manohar Thakur, Software Engineer, Full Stack Developer, React, Next.js, Node.js, Portfolio" />
-  <meta name="author" content="Manohar Kumar Thakur" />
+    content="Portfolio of Manohar Kumar Thakur (also known as Manohar Thakur or Manohar) — Full‑stack Software Engineer specializing in Next.js, React, Node.js, FastAPI, and PostgreSQL." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://manoharthakur18.github.io/portfolio/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Manohar Kumar Thakur - Software Engineer" />
-  <meta property="og:description"
-    content="Learn about Manohar Kumar Thakur, a Full-stack Software Engineer specializing in modern web applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Manohar Kumar Thakur" />
+  <meta property="og:title" content="Manohar Kumar Thakur — Software Engineer" />
+  <meta property="og:description" content="Full‑stack Software Engineer specializing in modern web applications." />
+  <meta property="og:url" content="https://manoharthakur18.github.io/portfolio/" />
   <meta property="og:image"
     content="https://lh3.googleusercontent.com/a/ACg8ocJjnky3I_gT1-s7pI-RHJm133-FFCDIf-4B9Kg6HJFc7WUuLjeW" />
-  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:image:alt" content="Portrait of Manohar Kumar Thakur" />
 
-  <title>Manohar Kumar Thakur - Full-stack Software Engineer | Manohar, Manohar Kumar, Manohar Thakur</title>
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manohar Kumar Thakur — Software Engineer" />
+  <meta name="twitter:description" content="Full‑stack Software Engineer specializing in modern web applications." />
+  <meta name="twitter:image"
+    content="https://lh3.googleusercontent.com/a/ACg8ocJjnky3I_gT1-s7pI-RHJm133-FFCDIf-4B9Kg6HJFc7WUuLjeW" />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Manohar Kumar Thakur",
-      "jobTitle": "Full-stack Software Engineer",
-      "description": "Full-stack Software Engineer with 3 years of expertise in Next.js, React, Node.js, FastApi, and PostgreSQL. Passionate about building modular, maintainable architectures with exceptional user experiences.",
-      "image": "https://lh3.googleusercontent.com/a/ACg8ocJjnky3I_gT1-s7pI-RHJm133-FFCDIf-4B9Kg6HJFc7WUuLjeW",
-      "sameAs": [
-        "https://github.com/manoharthakur18",
-        "https://www.linkedin.com/in/manohar-thakur/"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Ksolves India Ltd."
-      },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Lovely Professional University"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "India"
-      }
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Manohar Kumar Thakur",
+    "alternateName": ["Manohar Thakur", "Manohar"],
+    "givenName": "Manohar",
+    "additionalName": "Kumar",
+    "familyName": "Thakur",
+    "url": "https://manoharthakur18.github.io/portfolio/",
+    "jobTitle": "Full-stack Software Engineer",
+    "description": "Full-stack Software Engineer with 3 years of expertise in Next.js, React, Node.js, FastApi, and PostgreSQL.",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJjnky3I_gT1-s7pI-RHJm133-FFCDIf-4B9Kg6HJFc7WUuLjeW",
+    "sameAs": [
+      "https://github.com/manoharthakur18",
+      "https://www.linkedin.com/in/manohar-thakur/"
+    ],
+    "worksFor": {"@type": "Organization", "name": "Ksolves India Ltd."},
+    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Lovely Professional University"},
+    "address": {"@type": "PostalAddress", "addressCountry": "India"}
+  }
   </script>
 
-  <!-- Google Fonts -->
+  <!-- Fonts and CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -595,7 +597,7 @@
             <div class="experience-info">
               <h3>${exp.title}</h3>
               <p class="company">${exp.company}</p>
-              <p class="duration">${exp.duration}</p>
+              ${exp.duration ? `<p class="duration">${exp.duration}</p>` : ''}
             </div>
           </div>
           <ul class="experience-highlights">
@@ -676,7 +678,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Manohar Kumar Thakur. All rights reserved.</p>
+      <h4 class="footer-copyright">&copy; 2025 Manohar Kumar Thakur. All rights reserved.</h4>
       <p class="footer-tagline">
         Built with passion and modern web technologies
       </p>
