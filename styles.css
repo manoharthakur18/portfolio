@@ -71,6 +71,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Responsive Images - Ensure all images fit within their containers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* 
    Utility Classes
     */
@@ -1043,6 +1050,11 @@ body {
   transition: all 0.8s ease 0.2s;
 }
 
+.contact-image img {
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+
 .contact-image.animate {
   opacity: 1;
   transform: translateX(0);
@@ -1204,6 +1216,17 @@ body {
   .timeline-dot {
     left: 0;
   }
+
+  .contact-image {
+    height: auto;
+    max-height: 400px;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1251,6 +1274,17 @@ body {
 
   .modal-content {
     padding: 2rem;
+  }
+
+  .contact-image {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }
 
